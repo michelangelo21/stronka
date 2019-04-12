@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <title>☮ VW Transporter Shop</title>
+
+  </head>
+  <body onload="automat(); powitanie()">
+    <header>
+      <img id="gif" name="gif" src="images/giphy.gif" alt="gif"/>
+      <h1>VW Transporter Shop ☮</h1>
+    </header>
+    <h3 id="greeting"></h3>
+    <main>
+      <div class="wybor">
+        <p>Wybierz silnik:</p>
+        <input id="e1" type="radio" name="engine" value="2000" checked>1.1L 24KM</input><br/>
+        <input id="e2" type="radio" name="engine" value="4000">1.2L 30KM</input><br/>
+        <input id="e3" type="radio" name="engine" value="10000">1.5L 42KM</input><br/>
+        <input id="e4" type="radio" name="engine" value="12000">1.6L 47KM</input><br/>
+        <br/><br/>
+        <input id="oblicz" type="submit" value="Oblicz cenę" onclick="cena()"/>
+      </div>
+      <div class="wybor">
+        <p>Wybierz wyposażenie:</p>
+        <input id="q1" type="radio" name="equipment" value="0" checked>podstawowe</input><br/>
+        <input id="q2" type="radio" name="equipment" value="10000">premium</input><br/>
+        <input id="q3" type="radio" name="equipment" value="20000">camper</input><br/>
+        <input id="q4" type="radio" name="equipment" value="40000">camper premium</input><br/>
+        <br/>
+        <p id="cena">Cena wynosi:</p>
+
+      </div>
+
+      <img id="galeria" src="images/photo1.jpg" alt="galeria" usemap="#galeriamap">
+      <map name="galeriamap">
+        <area shape="rect" coords="0,0,200,400" onclick="prev()" alt="prev">
+        <area shape="rect" coords="440,0,640,400" onclick="next()" alt="next">
+      </map>
+    </main>
+    <script src="js/galeria.js"></script>
+    <script src="js/cena.js"></script>
+    <script src="js/data.js"></script>
+  </body>
+</html>
