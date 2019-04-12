@@ -6,11 +6,11 @@
 }
 
 body{
-  background-color: 00838e;
+  background-color: #00838e;
 }
 
 header {
-  background-color: f9c32d;
+  background-color: #f9c32d;
   font-family: 'Lobster', cursive;
   font-size:60px;
   clear: right;
@@ -29,26 +29,25 @@ h1 {
 }
 
 #gif {
-  height:  150px;
+  height:  150px;;
   float: left;
 }
 
 #greeting {
   padding-top: 0px;
-  background-color: green;
+  background-color: #4fb3be;
   float: left;
   width: 100%
 }
 
 main {
   width: 100%;
-  background-color: blue;
   float: left;
 }
 
 
 .wybor {
-  background-color: 4fb3be
+  background-color: #4fb3be
   flex-direction: column;
   width: 15%;
   height: 250px;
