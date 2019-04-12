@@ -47,7 +47,7 @@ main {
 
 
 .wybor {
-  background-color: #4fb3be
+  background-color: #4fb3be;
   flex-direction: column;
   width: 15%;
   height: 250px;
